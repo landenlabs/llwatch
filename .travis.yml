@@ -7,3 +7,4 @@ before_install:
 script:
   - export PATH=$MSBUILD_PATH:$PATH
   - MSBuild.exe -help
+  - MSBuild.exe LLWatch
