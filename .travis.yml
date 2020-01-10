@@ -4,7 +4,7 @@ env:
   - MSBUILD_PATH="/C/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin"
 script:
   - export PATH=$MSBUILD_PATH:$PATH
-  - MSBuild.exe -help
-  - MSBuild.exe LLWatch.sln /t:Clean /p:Configuration=Debug
-  - cd LLWatch
-  - MSBuild.exe LLWatch.vcxproj /t:Clean /p:Configuration=Release
+#  - MSBuild.exe -help
+  - MSBuild.exe LLWatch.sln
+#  - cd LLWatch
+#  - MSBuild.exe LLWatch.vcxproj /t:Clean /p:Configuration=Release
