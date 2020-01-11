@@ -5,6 +5,9 @@ Windows / DOS   Watch program execution similar to unix / linux watch command
 LLWatch repeats execution of a DOS command and monitors its console output.
 Optionally homing the cusor and highlighting changes. 
 
+ [![Build status](https://travis-ci.org/landenlabs/llwatch.svg?branch=master)](https://travis-ci.org/landenlabs/llwatch)
+
+
 Visit home website
 
 [http://landenlabs.com](http://landenlabs.com)
