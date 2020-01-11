@@ -13,5 +13,6 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
+  file: "C:\Users\travis\build\landenlabs\llwatch\x64\Debug\LLWatch.exe"
   on:
     branch: master
