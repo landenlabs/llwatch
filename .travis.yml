@@ -8,11 +8,15 @@ script:
   - MSBuild.exe LLWatch.sln
 #  - cd LLWatch
 #  - MSBuild.exe LLWatch.vcxproj /t:Clean /p:Configuration=Release
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  file: "C:\Users\travis\build\landenlabs\llwatch\x64\Debug\LLWatch.exe"
-  on:
-    branch: master
+
+
+# Skip deploy
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+#   keep_history: false
+#   verbose: false
+#   file: "C:\Users\travis\build\landenlabs\llwatch\x64\Debug\LLWatch.exe"
+#   on:
+#     branch: master
