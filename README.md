@@ -1,16 +1,17 @@
-![http://landenlabs.com/console/llwatch/llwatch64.png](http://landenlabs.com/console/llwatch/llwatch.jpg) 
+![https://landenlabs.com/console/llwatch/llwatch64.png](https://landenlabs.com/console/llwatch/llwatch.jpg)
+
 #LLWatch
 Windows / DOS   Watch program execution similar to unix / linux watch command
 
 LLWatch repeats execution of a DOS command and monitors its console output.
-Optionally homing the cusor and highlighting changes. 
+Optionally homing the cusor and highlighting changes.
 
  [![Build status](https://travis-ci.org/landenlabs/llwatch.svg?branch=master)](https://travis-ci.org/landenlabs/llwatch)
 
 
 Visit home website
 
-[http://landenlabs.com](http://landenlabs.com)
+[https://landenlabs.com](https://landenlabs.com)
 
 
 Help Banner:
@@ -50,13 +51,13 @@ EXAMPLES:
 
 Help banner
 
-![http://landenlabs.com/console/llwatch/help.png](http://landenlabs.com/console/llwatch/help.png)
+![https://landenlabs.com/console/llwatch/help.png](https://landenlabs.com/console/llwatch/help.png)
 
 Example of scrolling output and highlighted changes:
 
-![http://landenlabs.com/console/llwatch/tasklist.png](http://landenlabs.com/console/llwatch/tasklist.png)
+![https://landenlabs.com/console/llwatch/tasklist.png](https://landenlabs.com/console/llwatch/tasklist.png)
 
 Example of updating screen with 'home screen' enabled:
 
-![http://landenlabs.com/console/llwatch/refresh.gif](http://landenlabs.com/console/llwatch/refresh.gif)
+![https://landenlabs.com/console/llwatch/refresh.gif](https://landenlabs.com/console/llwatch/refresh.gif)
 
