@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLWatch", "LLWatch\LLWatch.vcxproj", "{51BC1F3C-28E8-4D00-9317-ADA79F07BA08}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "llwatch-installer", "llwatch-installer\llwatch-installer.vdproj", "{93C0FE3B-43CE-4BBB-944D-FE7B53BD6275}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35507.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "llwatch", "llwatch.vcxproj", "{51BC1F3C-28E8-4D00-9317-ADA79F07BA08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,14 +21,6 @@ Global
 		{51BC1F3C-28E8-4D00-9317-ADA79F07BA08}.Release|x64.Build.0 = Release|x64
 		{51BC1F3C-28E8-4D00-9317-ADA79F07BA08}.Release|x86.ActiveCfg = Release|Win32
 		{51BC1F3C-28E8-4D00-9317-ADA79F07BA08}.Release|x86.Build.0 = Release|Win32
-		{93C0FE3B-43CE-4BBB-944D-FE7B53BD6275}.Debug|x64.ActiveCfg = Debug
-		{93C0FE3B-43CE-4BBB-944D-FE7B53BD6275}.Debug|x64.Build.0 = Debug
-		{93C0FE3B-43CE-4BBB-944D-FE7B53BD6275}.Debug|x86.ActiveCfg = Debug
-		{93C0FE3B-43CE-4BBB-944D-FE7B53BD6275}.Debug|x86.Build.0 = Debug
-		{93C0FE3B-43CE-4BBB-944D-FE7B53BD6275}.Release|x64.ActiveCfg = Release
-		{93C0FE3B-43CE-4BBB-944D-FE7B53BD6275}.Release|x64.Build.0 = Release
-		{93C0FE3B-43CE-4BBB-944D-FE7B53BD6275}.Release|x86.ActiveCfg = Release
-		{93C0FE3B-43CE-4BBB-944D-FE7B53BD6275}.Release|x86.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

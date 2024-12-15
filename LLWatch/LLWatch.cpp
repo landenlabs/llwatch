@@ -30,22 +30,21 @@
  
 #pragma warning( disable : 4995 )
 
+
+
+// Windows specific classes
+#include "winprocess.h"
+#include "wincursor.h"
+#include "colorize.h"
+#include "getopts.h"
+#include "llstring.h"
+
 #include <Windows.h>
 
 #include <iostream>
 #include <string>
 #include <stdio.h> 
 #include <strsafe.h>
-
-// Windows specific classes
-#include "WinProcess.h"
-#include "WinCursor.h"
-#include "Colorize.h"
-#include "GetOpts.h"
-
-#include "llstring.h"
-
-
 
 using namespace std;
 typedef unsigned int uint;
@@ -104,7 +103,7 @@ uint m_bottomLines = 0;
 
 #ifdef HAVE_REGEX
 bool m_isGrepLinePat = false;
-std::tr1::regex     m_grepLinePat;      // -G=<grepPattern>
+std::regex     m_grepLinePat;      // -G=<grepPattern>
 std::string         m_replaceStr;       // -R=<replacePattern>
 #endif
 
@@ -157,7 +156,7 @@ void TrimTopBottom(lstring& currBuffer, uint topLines, uint bottomLines)
 }
 
 // ======================================================================================
-void RegexTrim(lstring& currBuffer, const std::tr1::regex& grepLinePat, const lstring& replaceStr)
+void RegexTrim(lstring& currBuffer, const std::regex& grepLinePat, const lstring& replaceStr)
 {
 	const char eol[] = "\n";
 	Split lines(currBuffer, eol);

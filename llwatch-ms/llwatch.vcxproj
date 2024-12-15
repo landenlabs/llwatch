@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -18,36 +18,55 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\llwatch\colorize.cpp" />
+    <ClCompile Include="..\llwatch\getopts.cpp" />
+    <ClCompile Include="..\llwatch\llstring.cpp" />
+    <ClCompile Include="..\llwatch\llwatch.cpp" />
+    <ClCompile Include="..\llwatch\winprocess.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\llwatch\colorize.h" />
+    <ClInclude Include="..\llwatch\getopts.h" />
+    <ClInclude Include="..\llwatch\hnd.h" />
+    <ClInclude Include="..\llwatch\llstring.h" />
+    <ClInclude Include="..\llwatch\resource.h" />
+    <ClInclude Include="..\llwatch\wincursor.h" />
+    <ClInclude Include="..\llwatch\winprocess.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\llwatch\resource.rc" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{51BC1F3C-28E8-4D00-9317-ADA79F07BA08}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Watch</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v100</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v100</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -145,25 +164,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Colorize.cpp" />
-    <ClCompile Include="GetOpts.cpp" />
-    <ClCompile Include="llstring.cpp" />
-    <ClCompile Include="LLWatch.cpp" />
-    <ClCompile Include="WinProcess.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Colorize.h" />
-    <ClInclude Include="GetOpts.h" />
-    <ClInclude Include="Hnd.h" />
-    <ClInclude Include="llstring.h" />
-    <ClInclude Include="resource.h" />
-    <ClInclude Include="WinCursor.h" />
-    <ClInclude Include="WinProcess.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Resource.rc" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

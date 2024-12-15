@@ -110,21 +110,21 @@ lstring& lstring::trim()
 
 
 //-----------------------------------------------------------------------------
-bool lstring::regFind(const std::tr1::regex&  grepLinePat) const
+bool lstring::regFind(const std::regex&  grepLinePat) const
 {
 	std::string::const_iterator begIter = begin();
 	std::string::const_iterator endIter = end();
-	std::tr1::smatch match;
+	std::smatch match;
 	std::regex_constants::match_flag_type flags = std::regex_constants::match_default;
 
-	return std::tr1::regex_search(begIter, endIter, match, grepLinePat, flags);
+	return std::regex_search(begIter, endIter, match, grepLinePat, flags);
 }
 
 //-----------------------------------------------------------------------------
-bool lstring::regReplace(const std::tr1::regex& grepLinePat, const std::string& replaceStr)
+bool lstring::regReplace(const std::regex& grepLinePat, const std::string& replaceStr)
 {
 	bool itemMatches = false;
-	std::tr1::smatch match;
+	std::smatch match;
 	std::regex_constants::match_flag_type flags = std::regex_constants::match_default;
 
 	// Loop to get multiple matches on a line.
@@ -136,7 +136,7 @@ bool lstring::regReplace(const std::tr1::regex& grepLinePat, const std::string& 
 		std::advance(begIter, off);
 
 		if (begIter < endIter &&
-			std::tr1::regex_search(begIter, endIter, match, grepLinePat, flags | std::regex_constants::format_first_only))
+			std::regex_search(begIter, endIter, match, grepLinePat, flags | std::regex_constants::format_first_only))
 		{
 			std::string subStr = this->substr(off);
 			std::string newStr = std::regex_replace(subStr, grepLinePat, replaceStr, flags | std::regex_constants::format_first_only);

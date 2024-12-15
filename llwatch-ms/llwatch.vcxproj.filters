@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\llwatch\colorize.cpp" />
+    <ClCompile Include="..\llwatch\getopts.cpp" />
+    <ClCompile Include="..\llwatch\llstring.cpp" />
+    <ClCompile Include="..\llwatch\llwatch.cpp" />
+    <ClCompile Include="..\llwatch\winprocess.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\llwatch\colorize.h" />
+    <ClInclude Include="..\llwatch\getopts.h" />
+    <ClInclude Include="..\llwatch\hnd.h" />
+    <ClInclude Include="..\llwatch\llstring.h" />
+    <ClInclude Include="..\llwatch\resource.h" />
+    <ClInclude Include="..\llwatch\wincursor.h" />
+    <ClInclude Include="..\llwatch\winprocess.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\llwatch\resource.rc" />
+  </ItemGroup>
+</Project>

@@ -90,8 +90,8 @@ public:
 
 	lstring& trim();
 
-	bool  regFind(const std::tr1::regex&  grepLinePat) const;
-	bool  regReplace(const std::tr1::regex& grepLinePat, const std::string& replaceStr);
+	bool  regFind(const std::regex&  grepLinePat) const;
+	bool  regReplace(const std::regex& grepLinePat, const std::string& replaceStr);
 
 	static char* PadRight(char* str, size_t maxLen, size_t padLen, char padChr);
 	static char* PadLeft(char* str, size_t maxLen, size_t padLen, char padChr);
