@@ -34,6 +34,9 @@
     <ClInclude Include="..\llwatch\winprocess.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
+    <ItemGroup>
+    <ResourceCompile Include="llwatch.rc" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{51BC1F3C-28E8-4D00-9317-ADA79F07BA08}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
