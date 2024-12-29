@@ -86,6 +86,8 @@ char sUsage[] =
 "EXAMPLES:\n"
 "    To watch the contents of a directory change, you could use: \n"
 "       llwatch -- cmd /c dir *.txt \n"
+"    To monitor time \n"
+"       llwatch -h -- cmd /c \"time / t\" \n"
 "\n"
 "    Use find to filter command output\n"
 "       llwatch -- cmd /c \"c:\\Windows\\System32\\tasklist.exe | find \"Console\"\" \n"

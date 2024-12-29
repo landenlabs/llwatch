@@ -30,12 +30,9 @@
     <ClInclude Include="..\llwatch\getopts.h" />
     <ClInclude Include="..\llwatch\hnd.h" />
     <ClInclude Include="..\llwatch\llstring.h" />
-    <ClInclude Include="..\llwatch\resource.h" />
     <ClInclude Include="..\llwatch\wincursor.h" />
     <ClInclude Include="..\llwatch\winprocess.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="..\llwatch\resource.rc" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{51BC1F3C-28E8-4D00-9317-ADA79F07BA08}</ProjectGuid>

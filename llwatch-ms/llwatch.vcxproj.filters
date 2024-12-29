@@ -12,11 +12,8 @@
     <ClInclude Include="..\llwatch\getopts.h" />
     <ClInclude Include="..\llwatch\hnd.h" />
     <ClInclude Include="..\llwatch\llstring.h" />
-    <ClInclude Include="..\llwatch\resource.h" />
     <ClInclude Include="..\llwatch\wincursor.h" />
     <ClInclude Include="..\llwatch\winprocess.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="..\llwatch\resource.rc" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
 </Project>
