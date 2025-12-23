@@ -10,7 +10,7 @@ if not exist "%dstdir%" (
 
 if not exist "%msbuild%" (
 echo Fall back msbuild not found at "%msbuild%"
-set msbuild=G:\opt\VisualStudio\2022\Preview\MSBuild\Current\Bin\MSBuild.exe
+set msbuild=G:\opt\VisualStudio\18\Community\MSBuild\Current\Bin\MSBuild.exe
 )
 
 cd %prog%-ms
