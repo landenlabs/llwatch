@@ -1,0 +1,48 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build
+        run: msbuild llwatch-ms/llwatch.sln /p:Configuration=Release /p:Platform=x64
+
+      - name: Stage artifact
+        shell: pwsh
+        run: |
+          $exe = Get-ChildItem -Recurse -Filter "llwatch.exe" |
+                 Where-Object { $_.DirectoryName -match "Release" } |
+                 Select-Object -First 1
+          Copy-Item $exe.FullName "llwatch.exe"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-binary
+          path: llwatch.exe
+
+  release:
+    needs: [build-windows]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest Build
+          prerelease: true
+          files: windows-binary/llwatch.exe
