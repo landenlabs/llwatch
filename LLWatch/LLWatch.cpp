@@ -7,7 +7,7 @@
 //
 // ----- License ----
 //
-// Copyright (c) 2016 Dennis Lang
+// Copyright (c) 2026 Dennis Lang
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -52,10 +52,10 @@ typedef std::string String;
 
 #define BUFSIZE 4096 
 
-#define _VERSION "v1.1"
+#define VERSION "v6.05.04"
 char sUsage[] =
 "\n"
-"LLWatch " _VERSION " - " __DATE__ "\n"
+"LLWatch " VERSION " - " __DATE__ "\n"
 "By: Dennis Lang\n"
 "https://landenlabs.com/\n"
 "\n"
