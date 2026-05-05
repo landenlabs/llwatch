@@ -52,7 +52,7 @@ typedef std::string String;
 
 #define BUFSIZE 4096 
 
-#define VERSION "v6.05.04"
+#define VERSION "v6.05.05"
 char sUsage[] =
 "\n"
 "LLWatch " VERSION " - " __DATE__ "\n"
