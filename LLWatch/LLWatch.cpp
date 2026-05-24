@@ -53,9 +53,9 @@ typedef std::string String;
 #define BUFSIZE 4096 
 
 <<<<<<< Updated upstream
-#define VERSION "v6.05.05"
+#define VERSION "v6.05.25"
 =======
-#define VERSION "v6.05.10"
+#define VERSION "v6.05.25"
 >>>>>>> Stashed changes
 char sUsage[] =
 "\n"
