@@ -1,7 +1,7 @@
 // ---------------------------------------------------------------------------
 // WinProcess.cpp - Windows Process api helper
 // 
-// Author: Dennis Lang - 2015
+// Author: Dennis Lang - 2026
 // http://LanDenLabs.com
 //
 // This file is part of LLWatch project.

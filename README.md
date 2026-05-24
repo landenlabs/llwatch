@@ -1,8 +1,8 @@
-<table border="0">
+﻿<table border="0">
   <tr>
     <td>
-      <!-- VERSION -->v6.05.11<br>
-      <!-- DATE -->11-May-2026<br>
+      <!-- VERSION -->v6.05.24<br>
+      <!-- DATE -->24-May-2026<br>
       macOS<br>
       <a href="https://landenlabs.com">Home</a>
     </td>
@@ -33,7 +33,7 @@ Visit home website
 
 Help Banner:
 <pre>
-LLWatch v1.1 - Jan 23 2016
+LLWatch <!-- VERSION -->v6.05.24<!-- DATE -->24-May-2026
 By: Dennis Lang
 https://landenlabs.com/
 
