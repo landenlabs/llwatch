@@ -51,12 +51,8 @@ typedef unsigned int uint;
 typedef std::string String;
 
 #define BUFSIZE 4096 
+#define VERSION "v6.05.26"
 
-<<<<<<< Updated upstream
-#define VERSION "v6.05.25"
-=======
-#define VERSION "v6.05.25"
->>>>>>> Stashed changes
 char sUsage[] =
 "\n"
 "LLWatch " VERSION " - " __DATE__ "\n"
